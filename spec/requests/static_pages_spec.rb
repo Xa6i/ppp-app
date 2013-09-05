@@ -12,10 +12,16 @@ describe "Static pages" do
 		it { should_not have_selector('title', text: '| Home') }
 	end
 
-	describe "Help page" do			
-		before { visit help_path }
-		it { should have_selector('h1', text: 'Help') }
-		it { should have_selector('title', text: full_title('Help')) }
+	describe "Print Products page" do			
+		before { visit products_path }
+		it { should have_selector('h1', text: 'Print Products') }
+		it { should have_selector('title', text: full_title('Products')) }
+	end	
+
+	describe "Publications page" do			
+		before { visit publications_path }
+		it { should have_selector('h1', text: 'Publications') }
+		it { should have_selector('title', text: full_title('Publications')) }
 	end	
 
 	describe "About page" do			
@@ -34,8 +40,10 @@ describe "Static pages" do
 		visit root_path
 		click_link "About"
 		page.should have_selector 'title', text: full_title('About Us')
-		click_link "Help"
-		page.should have_selector 'title', text: full_title('Help')
+		click_link "Products"
+		page.should have_selector 'title', text: full_title('Products')
+		click_link "Publications"
+		page.should have_selector 'title', text: full_title('Publications')
 		click_link "Contact Us"
 		page.should have_selector 'title', text: full_title('Contact Us')
 		click_link "Picon Punch Press, LLC"
