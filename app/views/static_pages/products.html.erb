@@ -1,13 +1,19 @@
 <% provide(:title, 'Products') %>
-<h1>Print Products</h1>
-<p>
-	Picon Punch Press specializes in high quality print products at extremely competitive prices.  These products include:
+<div class="center hero-unit">
+	<h1>Print Products</h1>
+	<p>
+		Picon Punch Press specializes in high quality print products at extremely competitive prices.  These products include:
+	</p>
+</div>
+<div class="row-fluid">
 	<ul>
+	<div class="span3">
 		<li>Business Cards</li>
 		<ul>
 			<li>1-sided</li>
 			<li>2-sided</li>
 		</ul>
+	</div><div class="span3">
 		<li>Post Cards</li>
 		<ul>
 			<li>4" x 6"</li>
@@ -15,17 +21,28 @@
 			<li>5" x 7"</li>
 			<li>6.5" x 9"</li>
 		</ul>
-		<li>Hangtag, 1- and 2-sided</li>
+	</div><div class="span3">
+		<li>Hangtags (Door Hangers)</li>
 		<ul>
-			<li>2" x 5"</li>
-			<li>2" x 7"</li>
+			<li>1- and 2-sided</li>
+			<ul>
+				<li>2" x 5"</li>
+				<li>2" x 7"</li>
+			</ul>
 		</ul>
+	</div><div class="span3">
 		<li>Table Tents</li>
 		<ul>
 			<li>4" x 4"</li>
 			<li>4" x 6"</li>
 			<li>5" x 5.5"</li>
 		</ul>
+	</div>
+</div>
+&nbsp;
+<div class="row-fluid">
+	<ul>
+	<div class="span6">
 		<li>Window Clings</li>
 		<ul>
 			<li>12" x 18"</li>
@@ -37,6 +54,7 @@
 			<li>32" x 48"</li>
 			<li>36" x 48"</li>
 		</ul>
+	</div><div class="span6">
 		<li>Window Decals (Indoor and Outdoor)</li>
 		<ul>
 			<li>12" x 18"</li>
@@ -48,9 +66,16 @@
 			<li>32" x 48"</li>
 			<li>36" x 48"</li>
 		</ul>
+	</div>
+</div>
+&nbsp;
+<div class="row-fluid">
+	<ul>
+	<div class="span12">
 		<li>And much more!</li>
 		<ul>
 			<li><%= link_to "Contact us", contact_path %> with your specific print needs.</li>
 		</ul>
+	</div>
 	</ul>
-</p>
+</div>
