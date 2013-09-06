@@ -3,6 +3,8 @@
 /* mixins, variables, etc. */
 
 $grayMediumLight: #eaeaea;
+$redMediumLight:  #f55;
+$redMediumDark:   #d33;
 
 /* universal */
 
@@ -28,6 +30,16 @@ textarea {
     margin-bottom: 10px;
   }
 }
+
+.zero {
+    background-color: rgba(255, 0, 0, 0.1); // use rgba and set Opacity to 0 for transparent.
+    padding: 30px;
+    font-size: 12px;
+    font-weight: 200;
+    h4 {
+      color: $redMediumDark;
+    }
+ }
 
 /* typography */
 
@@ -63,7 +75,7 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: $red;
+  color: $redMediumDark;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
