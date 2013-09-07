@@ -32,7 +32,36 @@ textarea {
   }
 }
 
-.zero {
+/* twitter bootstrap */
+
+/*
+.hero-unit {
+  height: 100%;
+  min-height: 649px;
+  padding: 60px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  color: inherit;
+  background-color: #eeeeee;
+  background-image: url('../img/blured.jpg');
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  h1 {
+    margin-bottom: 0;
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -1px;
+    color: inherit;
+  }
+  li {
+    line-height: 30px;
+  }
+  .zero {
     background-color: rgba(255, 0, 0, 0.1); // use rgba and set Opacity to 0 for transparent.
     padding: 30px;
     font-size: 12px;
@@ -40,7 +69,30 @@ textarea {
     h4 {
       color: $redMediumDark;
     }
- }
+  }
+}
+*/
+
+.hero-unit {
+  h1 {
+    margin-bottom: 0;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -1px;
+    color: inherit;
+  }
+}
+
+.zero {
+  background-color: rgba(255, 0, 0, 0.1); // use rgba and set Opacity to 0 for transparent.
+  padding: 30px;
+  font-size: 12px;
+  font-weight: 200;
+  h4 {
+    color: $redMediumDark;
+  }
+}
+
 
 /* typography */
 

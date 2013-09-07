@@ -5,6 +5,9 @@
 		<a href="http://piconpunch.com" style="color: red">Picon Punch Press, LLC</a> publishes <a href="http://ilovereno.com" style="color: red"><em>I Love Reno</em> Magazine</a> and offers professional custom print products for all your business needs.
 	</p>
 	&nbsp;
-	<%= link_to "Order Print Products", products_path, class: "btn-large btn-danger" %>
-	<%= link_to "Our Publications", publications_path, class: "btn-large btn-inverse" %>
+	<div class="row-fluid">
+		<div class="span3 offset3"><%= link_to "Order Print Products", products_path, class: "btn btn-danger" %></div> 
+		&nbsp;
+		<div class="span3"><%= link_to "Our Publications", publications_path, class: "btn btn-inverse" %></div>
+	</div>
 </div>
